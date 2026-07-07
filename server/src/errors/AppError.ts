@@ -4,7 +4,7 @@ export class AppError extends Error {
         message: string,
     ){
         super(message);
-        this.name = "App Error";
+        this.name = "AppError";
         Error.captureStackTrace(this, this.constructor);
     }
 }
